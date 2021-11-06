@@ -70,13 +70,13 @@ def friends_list(s: str) -> str:
 
 
 def nextBigger(num: int) -> int:
-    arr = list(str(num))
-    max_num = int("".join(sorted(arr)[::-1]))
-    min_num = sorted(arr)
+    num_arr = list(str(num))
+    max_num = int("".join(sorted(num_arr)[::-1]))
+    num_set = set(num_arr)
 
     while num <= max_num:
         num += 1
-        if sorted(list(str(num))) == min_num:
+        if set(str(num)) == num_set:
             return num
 
     return -1
