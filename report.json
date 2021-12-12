@@ -1,0 +1,420 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/job.feature:4",
+      "name": "",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:5",
+          "name": "the user logging in with username and password given on the page",
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:6",
+          "name": "navigates to Admin",
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:7",
+          "name": "navigates to to Job - Job Titles",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/job.feature:9",
+      "name": "Add new job title",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:9"
+          },
+          "name": "the user logging in with username and password given on the page",
+          "result": {
+            "duration": 12.540805339813232,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:17"
+          },
+          "name": "navigates to Admin",
+          "result": {
+            "duration": 1.770780324935913,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:22"
+          },
+          "name": "navigates to to Job - Job Titles",
+          "result": {
+            "duration": 0.7993648052215576,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:29"
+          },
+          "name": "user click on the Add button",
+          "result": {
+            "duration": 0.782447099685669,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:34"
+          },
+          "name": "fill the fields with following",
+          "result": {
+            "duration": 0.10845804214477539,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "job_title",
+              "description",
+              "notes"
+            ],
+            "rows": [
+              [
+                "Student",
+                "someText",
+                "someNotes"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/job.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:40"
+          },
+          "name": "user click on Save",
+          "result": {
+            "duration": 0.8125290870666504,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/job.feature:15",
+          "match": {
+            "arguments": [
+              {
+                "name": "title",
+                "value": "Student"
+              }
+            ],
+            "location": "features/steps/job.py:45"
+          },
+          "name": "newly added title \"Student\" is visible on the grid",
+          "result": {
+            "duration": 0.08404731750488281,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/job.feature:17",
+      "name": "Modify job title",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:9"
+          },
+          "name": "the user logging in with username and password given on the page",
+          "result": {
+            "duration": 2.504532814025879,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:17"
+          },
+          "name": "navigates to Admin",
+          "result": {
+            "duration": 1.2040510177612305,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:22"
+          },
+          "name": "navigates to to Job - Job Titles",
+          "result": {
+            "duration": 0.72898268699646,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:51"
+          },
+          "name": "user go to the following existing record",
+          "result": {
+            "duration": 0.6119592189788818,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "job_title"
+            ],
+            "rows": [
+              [
+                "Student"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:60"
+          },
+          "name": "click on Edit button",
+          "result": {
+            "duration": 0.04297161102294922,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:22",
+          "match": {
+            "arguments": [
+              {
+                "name": "description",
+                "value": "NewDescription"
+              }
+            ],
+            "location": "features/steps/job.py:65"
+          },
+          "name": "refill Job Description with \"NewDescription\"",
+          "result": {
+            "duration": 0.0563817024230957,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/job.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:71"
+          },
+          "name": "the user click on Save",
+          "result": {
+            "duration": 0.9334115982055664,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/job.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:76"
+          },
+          "name": "following changes is visible on the grid",
+          "result": {
+            "duration": 0.07499480247497559,
+            "status": "passed"
+          },
+          "step_type": "then",
+          "table": {
+            "headings": [
+              "new_description"
+            ],
+            "rows": [
+              [
+                "NewDescription"
+              ]
+            ]
+          }
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/job.feature:28",
+      "name": "Delete job title",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:9"
+          },
+          "name": "the user logging in with username and password given on the page",
+          "result": {
+            "duration": 2.370349407196045,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:17"
+          },
+          "name": "navigates to Admin",
+          "result": {
+            "duration": 1.9450392723083496,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/job.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:22"
+          },
+          "name": "navigates to to Job - Job Titles",
+          "result": {
+            "duration": 0.7845504283905029,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Given",
+          "location": "features/job.feature:29",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:83"
+          },
+          "name": "user select the following existing record",
+          "result": {
+            "duration": 0.06234407424926758,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "job_title"
+            ],
+            "rows": [
+              [
+                "Student"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/job.feature:32",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/job.py:90"
+          },
+          "name": "user click on Delete button",
+          "result": {
+            "duration": 1.1042594909667969,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/job.feature:33",
+          "match": {
+            "arguments": [
+              {
+                "name": "text",
+                "value": "Student"
+              }
+            ],
+            "location": "features/steps/job.py:96"
+          },
+          "name": "Student record no longer visible on the grid",
+          "result": {
+            "duration": 10.261373519897461,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/job.feature:2",
+  "name": "Job",
+  "status": "passed",
+  "tags": []
+}
+]
