@@ -1,5 +1,5 @@
 # Selenium Home Task (variant 2)
-### Firstly you need to install requirements. Run in your command line:
+### Firstly you need to install the requirements. Run in your command line:
 ```
 pip install -r requirements.txt
 ```
