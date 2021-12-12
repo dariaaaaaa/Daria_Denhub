@@ -1,6 +1,9 @@
 # Selenium Home Task (variant 2)
-Automation with Selenium webdriver, python, behave
-## Project Stucture:
+Automation with Selenium webdriver, python, behave  
+
+## Project Stucture:  
+
+```
 .                     
 ├── behave.ini                         
 ├── features                        
@@ -8,7 +11,7 @@ Automation with Selenium webdriver, python, behave
 │   ├── job.feature                     
 │   ├── lib                           
 │   │   └── pages                             
-│   │       ├── admin_page.py                         
+│   │       ├── admin_page.py                         
 │   │       ├── base_page.py                          
 │   │       ├── dashboard_page.py                            
 │   │       ├── jobtitle_list_page.py                             
@@ -18,14 +21,16 @@ Automation with Selenium webdriver, python, behave
 │       └── job.py                                    
 ├── report.html                                
 ├── report.json                     
-└── requirements.txt                
+└── requirements.txt     
+```
 
 ### Requirements. 
-#### To install requirements run in your command promt:
+##### To install requirements run in your command promt:
 ```
 pip install -r requirements.txt
 ```
-#### Also you need to download ChromeDriver and add its path to the environment variables.
+##### Also you need to download ChromeDriver and add its path to the environment variables.  
+
 
 ### To run the test with json report use:
 ```
