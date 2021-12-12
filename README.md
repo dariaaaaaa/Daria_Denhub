@@ -1,27 +1,30 @@
 # Selenium Home Task (variant 2)
 Automation with Selenium webdriver, python, behave  
 
-## Project Stucture:  
+## Project Structure:  
 
 ```
-.                     
-├── behave.ini                         
-├── features                        
-│   ├── environment.py                       
-│   ├── job.feature                     
-│   ├── lib                           
-│   │   └── pages                             
-│   │       ├── admin_page.py                         
-│   │       ├── base_page.py                          
-│   │       ├── dashboard_page.py                            
-│   │       ├── jobtitle_list_page.py                             
-│   │       ├── login_page.py                            
-│   │       └── save_jobtitle_page.py                          
-│   └── steps                               
-│       └── job.py                                    
-├── report.html                                
-├── report.json                     
-└── requirements.txt     
+.
+├── behave.ini
+├── features
+│   ├── add_job_title.feature
+│   ├── delete_job.feature
+│   ├── edit_job.feature
+│   ├── environment.py
+│   ├── lib
+│   │   └── pages
+│   │       ├── admin_page.py
+│   │       ├── base_page.py
+│   │       ├── dashboard_page.py
+│   │       ├── jobtitle_list_page.py
+│   │       ├── login_page.py
+│   │       └── save_jobtitle_page.py
+│   └── steps
+│       └── job.py
+├── report.html
+├── report.json
+└── requirements.txt
+  
 ```
 
 ### Requirements. 
