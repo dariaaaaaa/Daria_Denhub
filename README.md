@@ -1,4 +1,5 @@
 # Selenium Home Task (variant 2)
+Automation with Selenium webdriver, python, behave
 ### Firstly you need to install the requirements. Run in your command line:
 ```
 pip install -r requirements.txt
