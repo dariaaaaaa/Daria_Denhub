@@ -23,3 +23,7 @@ class SaveJobTitlePage(BasePage):
     def edit_description(self, new_description):
         self.job_description.clear()
         self.job_description.send_keys(new_description)
+
+    def contains_error(self, error):
+        path = '//span[contains(text(), "' + error + '")]'
+        return self.find((By.XPATH, path))
