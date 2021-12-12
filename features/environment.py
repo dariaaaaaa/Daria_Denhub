@@ -1,11 +1,8 @@
 from selenium import webdriver
-import logging
-import os
 
 
 def before_all(context):
-    path = os.getcwd() + '/features/lib/chromedriver'
-    driver = webdriver.Chrome(executable_path=path)
+    driver = webdriver.Chrome()
     driver.maximize_window()
     driver.implicitly_wait(10)
 
