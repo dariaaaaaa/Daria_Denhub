@@ -26,7 +26,15 @@ def go_to_job(context):
     page.job_title.click()
 
 
-@given(u'user click on the Add button')
+@given(u'there is no "{title}" record on the grid')
+def check(context, title):
+    page = JobTitleListPage(context)
+    if page.contains_content(title):
+        page.select_checkbox(title)
+        page.delete_record()
+
+
+@step(u'user click on the Add button')
 def add(context):
     JobTitleListPage(context).add.click()
 
@@ -48,11 +56,48 @@ def check(context, title):
     assert page.contains_content(title)
 
 
-@given(u'user go to the following existing record')
+@given(u'user has already created job title "{title}"')
+def add(context, title):
+    page = JobTitleListPage(context)
+    if not page.contains_content(title):
+        page.add.click()
+        next_page = SaveJobTitlePage(context)
+        next_page.fill_job_info({'job_title': title,
+                                 'description': "",
+                                 'notes': ""})
+        next_page.save.click()
+
+
+@when(u'user fills the Job Title field with "{title}"')
+def try_to_fill(context, title):
+    page = SaveJobTitlePage(context)
+    page.fill_job_info({'job_title': title,
+                        'description': "",
+                        'notes': ""})
+
+
+@then(u'error message "{error}" appear')
+def check_error(context, error):
+    page = SaveJobTitlePage(context)
+    assert page.contains_error(error)
+
+
+@given(u'the following existing record')
 def go_to_job(context):
     record = (context.table.rows[0])['job_title']
     page = JobTitleListPage(context)
-    assert page.contains_content(record)
+    if not page.contains_content(record):
+        page.add.click()
+        next_page = SaveJobTitlePage(context)
+        next_page.fill_job_info({'job_title': record,
+                                 'description': "",
+                                 'notes': ""})
+        next_page.save.click()
+
+
+@step(u'user select "{record}" record')
+def go_to(context, record):
+    page = JobTitleListPage(context)
     record_button = page.find_record(record)
     record_button.click()
 
