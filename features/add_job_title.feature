@@ -7,7 +7,8 @@ Feature: Add job title
     And navigates to to Job - Job Titles
 
   Scenario: Add new unique job title
-    Given user click on the Add button
+    Given there is no "Student" record on the grid
+    And user click on the Add button
     And fill the fields with following
     | job_title | description | notes     |
     | Student   | someText    | someNotes |
