@@ -1,0 +1,267 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/1_UploadFile.feature:5",
+      "name": "Valid request",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/1_UploadFile.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "url",
+                "value": "https://content.dropboxapi.com/2/files/upload"
+              }
+            ],
+            "location": "features/steps/drx_api_tests.py:12"
+          },
+          "name": "dropbox url \"https://content.dropboxapi.com/2/files/upload\"",
+          "result": {
+            "duration": 8.440017700195312e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/1_UploadFile.feature:7",
+          "match": {
+            "arguments": [
+              {
+                "name": "file_path",
+                "value": "/features/lib/img/picture.png"
+              },
+              {
+                "name": "dbx_path",
+                "value": "/webAPI_home_task/picture.png"
+              }
+            ],
+            "location": "features/steps/drx_api_tests.py:17"
+          },
+          "name": "we want to upload file \"/features/lib/img/picture.png\" to dropbox with path \"/webAPI_home_task/picture.png\"",
+          "result": {
+            "duration": 8.106231689453125e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/1_UploadFile.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/drx_api_tests.py:96"
+          },
+          "name": "we consume the endpoint",
+          "result": {
+            "duration": 2.1246767044067383,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/1_UploadFile.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/drx_api_tests.py:101"
+          },
+          "name": "json response is retrieved with right data and 200 as status code",
+          "result": {
+            "duration": 0.0001361370086669922,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/1_UploadFile.feature:2",
+  "name": "Upload file",
+  "status": "passed",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/2_GetFileMetadata.feature:4",
+      "name": "Request existing file",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/2_GetFileMetadata.feature:5",
+          "match": {
+            "arguments": [
+              {
+                "name": "url",
+                "value": "https://api.dropboxapi.com/2/sharing/get_file_metadata"
+              }
+            ],
+            "location": "features/steps/drx_api_tests.py:12"
+          },
+          "name": "dropbox url \"https://api.dropboxapi.com/2/sharing/get_file_metadata\"",
+          "result": {
+            "duration": 4.267692565917969e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/2_GetFileMetadata.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "file_name",
+                "value": "picture.png"
+              },
+              {
+                "name": "dir_path",
+                "value": "/webAPI_home_task/"
+              }
+            ],
+            "location": "features/steps/drx_api_tests.py:36"
+          },
+          "name": "we want to request file \"picture.png\" from directory \"/webAPI_home_task/\"",
+          "result": {
+            "duration": 5.267120361328125,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/2_GetFileMetadata.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/drx_api_tests.py:96"
+          },
+          "name": "we consume the endpoint",
+          "result": {
+            "duration": 1.0566000938415527,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/2_GetFileMetadata.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/drx_api_tests.py:101"
+          },
+          "name": "json response is retrieved with right data and 200 as status code",
+          "result": {
+            "duration": 0.00011539459228515625,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/2_GetFileMetadata.feature:2",
+  "name": "Get File Metadata",
+  "status": "passed",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/3_DeleteFile.feature:4",
+      "name": "Requesting existing file",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/3_DeleteFile.feature:5",
+          "match": {
+            "arguments": [
+              {
+                "name": "url",
+                "value": "https://api.dropboxapi.com/2/files/delete_v2"
+              }
+            ],
+            "location": "features/steps/drx_api_tests.py:12"
+          },
+          "name": "dropbox url \"https://api.dropboxapi.com/2/files/delete_v2\"",
+          "result": {
+            "duration": 0.00012612342834472656,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/3_DeleteFile.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "file",
+                "value": "/webAPI_home_task/picture.png"
+              }
+            ],
+            "location": "features/steps/drx_api_tests.py:84"
+          },
+          "name": "we want to delete file \"/webAPI_home_task/picture.png\"",
+          "result": {
+            "duration": 0.00017070770263671875,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/3_DeleteFile.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/drx_api_tests.py:96"
+          },
+          "name": "we consume the endpoint",
+          "result": {
+            "duration": 1.2987699508666992,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/3_DeleteFile.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/drx_api_tests.py:101"
+          },
+          "name": "json response is retrieved with right data and 200 as status code",
+          "result": {
+            "duration": 0.00011324882507324219,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/3_DeleteFile.feature:2",
+  "name": "Delete File",
+  "status": "passed",
+  "tags": []
+}
+]

@@ -1,0 +1,12 @@
+behave==1.2.6
+behave-html-formatter==0.9.8
+certifi==2021.10.8
+charset-normalizer==2.0.9
+idna==3.3
+parse==1.19.0
+parse-type==0.5.2
+ply==3.11
+requests==2.26.0
+six==1.16.0
+stone==3.2.1
+urllib3==1.26.7
