@@ -4,7 +4,7 @@ import json
 
 import requests
 
-TOKEN = "bMeLEZanGVEAAAAAAAAAAWRP_TCbIKOGNrffFMqSVih500eZ5NLZ5Ws5NbyzJB0V"
+TOKEN = "2WvHY0bp08oAAAAAAAAAAcAerOJoVBTKiGU2lApOdTQaJQJkMeUhquwIHNhzz-Em"
 
 MIME_FORM = 'text/plain; charset=dropbox-cors-hack'
 MIME_JSON = 'application/json'
