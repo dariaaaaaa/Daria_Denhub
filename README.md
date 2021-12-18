@@ -33,9 +33,9 @@ pip install -r requirements.txt
 
 ### To run the test with json report use:
 ```
-behave -f json.pretty -o report.json
+behave -f json.pretty -o report/report.json
 ```
 ### To run the test with html report use:
 ```
-behave -f html -o report.html
+behave -f html -o report/report.html
 ```
