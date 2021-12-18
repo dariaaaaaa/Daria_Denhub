@@ -29,7 +29,6 @@ Automated API testing with Python requests and behave
 ```
 pip install -r requirements.txt
 ```
-##### Also you need to download ChromeDriver and add its path to the environment variables.  
 
 
 ### To run the test with json report use:
